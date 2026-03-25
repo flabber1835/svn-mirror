@@ -302,6 +302,7 @@ static const ui_action_info_private_t action_info_list[] = {
     { ACTION_MEDIA_RECORD_SCREENSHOT,   "media-record-screenshot",  "Take screenshot",                  VICE_MACHINE_ALL^VICE_MACHINE_VSID },
     { ACTION_MEDIA_RECORD_VIDEO,        "media-record-video",       "Start recording video",            VICE_MACHINE_ALL^VICE_MACHINE_VSID },
     { ACTION_MEDIA_STOP,                "media-stop",               "Stop media recording",             VICE_MACHINE_ALL^VICE_MACHINE_VSID },
+    { ACTION_SID_MIDI_RECORD_TOGGLE,    "sid-midi-record-toggle",   "Toggle SID MIDI recording",        VICE_MACHINE_C64|VICE_MACHINE_C64SC|VICE_MACHINE_C64DTV|VICE_MACHINE_C128|VICE_MACHINE_SCPU64 },
     { ACTION_SCREENSHOT_QUICKSAVE,      "screenshot-quicksave",     "Quiksave screenshot",              VICE_MACHINE_ALL^VICE_MACHINE_VSID },
 
     /* debug items */

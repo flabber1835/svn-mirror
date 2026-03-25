@@ -135,6 +135,7 @@
 #include "actions-machine.h"
 #include "actions-media.h"
 #include "actions-printer.h"
+#include "actions-sidmidi.h"
 #include "actions-settings.h"
 #include "actions-snapshot.h"
 #include "actions-speed.h"
@@ -2310,6 +2311,7 @@ int ui_init_finalize(void)
             actions_machine_register();
             actions_media_register();
             actions_printer_register();
+            actions_sidmidi_register();
             actions_settings_register();
             actions_snapshot_register();
             actions_speed_register();

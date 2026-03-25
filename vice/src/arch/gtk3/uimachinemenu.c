@@ -610,6 +610,12 @@ static ui_menu_item_t snapshot_menu[] = {
     },
     UI_MENU_SEPARATOR,
 
+    {   .label    = "Toggle SID MIDI recording",
+        .type     = UI_MENU_TYPE_ITEM_ACTION,
+        .action   = ACTION_SID_MIDI_RECORD_TOGGLE
+    },
+    UI_MENU_SEPARATOR,
+
     {   .label    = "Quicksave screenshot",
         .type     = UI_MENU_TYPE_ITEM_ACTION,
         .action   = ACTION_SCREENSHOT_QUICKSAVE
