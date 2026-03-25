@@ -1,0 +1,16 @@
+# Build output directories
+vice/build-headless/
+vice/build-gtk3/
+vice/build-sdl2/
+
+# Compiled binaries and objects
+*.o
+*.a
+*.so
+*.so.*
+*.exe
+
+# Autotools cache (regenerated, not needed in repo)
+vice/autom4te.cache/
+vice/src/resid/autom4te.cache/
+vice/src/resid-dtv/autom4te.cache/
