@@ -1780,6 +1780,11 @@ void sound_store(uint16_t addr, uint8_t val, int chipno)
     /* perform the actual write to the sound chip */
     sound_machine_store(snddata.psid[chipno], addr, val);
 
+    /* MIDI recording hook: intercept writes to the first SID chip */
+    if (chipno == 0) {
+        sid_midi_record_store(addr, val, maincpu_clk);
+    }
+
     /* now check if we have a "dump" method (which dumps the details of the
        write access to a file), and if so, call it */
     if (!snddata.playdev->dump) {

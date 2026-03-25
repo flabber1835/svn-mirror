@@ -20,6 +20,9 @@
     media-record            <Alt><Shift>r
     media-stop              <Alt><Shift>s
     screenshot-quicksave    Pause
+
+    # SID MIDI recording
+    sid-midi-record-toggle  <Alt><Shift>m
 !else
     snapshot-load           <Command>l
     snapshot-save           <Command>s
@@ -34,4 +37,7 @@
     media-record            <Command><Shift>r
     media-stop              <Command><Shift>s
     screenshot-quicksave    Pause
+
+    # SID MIDI recording
+    sid-midi-record-toggle  <Command><Shift>m
 !endif

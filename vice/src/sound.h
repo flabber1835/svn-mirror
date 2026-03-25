@@ -290,6 +290,12 @@ int sound_init_pulse_device(void);
 /* internal function for sound device registration */
 int sound_register_device(const sound_device_t *pdevice);
 
+/* SID-to-MIDI recording API (implemented in sounddrv/soundmidi.c) */
+int  sid_midi_record_start(const char *filename);
+void sid_midi_record_stop(void);
+int  sid_midi_is_recording(void);
+void sid_midi_record_store(uint16_t addr, uint8_t val, CLOCK clk);
+
 /* other internal functions used around sound -code */
 int sound_read(uint16_t addr, int chipno);
 void sound_store(uint16_t addr, uint8_t val, int chipno);
