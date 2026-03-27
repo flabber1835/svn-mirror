@@ -2,6 +2,7 @@
 vice/build-headless/
 vice/build-gtk3/
 vice/build-sdl2/
+vice/build-aarch64/
 
 # Compiled binaries and objects
 *.o
